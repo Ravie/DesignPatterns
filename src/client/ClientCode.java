@@ -7,7 +7,7 @@ public class ClientCode {
         int row = 10, column = 10;
         Matrix dMatrix = new DenseMatrix(row, column);
         InitMatrix.fillMatrix(dMatrix, 100, 100);
-        StatMatrix.printMatrix(dMatrix);
+        dMatrix.draw();
         System.out.println("sumElems: " + StatMatrix.sumValues(dMatrix));
         System.out.println("avgValue: " + StatMatrix.avgValue(dMatrix));
         System.out.println("maxValue: " + StatMatrix.maxValue(dMatrix));
@@ -15,8 +15,7 @@ public class ClientCode {
 
         System.out.println("-----------------------------------------------------------------");
         Matrix sMatrix = new SparseMatrix(row, column);
-        InitMatrix.fillMatrix(sMatrix, 99, 100);
-        StatMatrix.printMatrix(sMatrix);
+        InitMatrix.fillMatrix(sMatrix, 5, 100);
         System.out.println("sumElems: " + StatMatrix.sumValues(sMatrix));
         System.out.println("avgValue: " + StatMatrix.avgValue(sMatrix));
         System.out.println("maxValue: " + StatMatrix.maxValue(sMatrix));

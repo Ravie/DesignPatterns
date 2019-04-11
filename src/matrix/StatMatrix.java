@@ -1,14 +1,6 @@
 package matrix;
 
 public class StatMatrix {
-    public static void printMatrix(Matrix m) {
-        for (int i = 0 ; i < m.getRowNumber(); i++) {
-            for (int j = 0; j < m.getColumnNumber(); j++) {
-                System.out.print(m.getElem(i, j) + "\t");
-            }
-            System.out.println();
-        }
-    }
 
     public static long sumValues(Matrix m) {
         long sum = 0;
