@@ -1,60 +1,67 @@
 package matrix;
 
 import java.io.*;
+import java.awt.Desktop;
 
-public class HTMLDrawer implements IDrawer {
-    private StringBuilder table = new StringBuilder();
+public class HTMLDrawer extends Drawer implements IDrawer {
 
-    @Override
-    public void printMatrix(IMatrix m) {
-        table.append(newTable());
-        for (int i = 0; i < m.getRowNumber(); i++) {
-            table.append(newLine());
-            for (int j = 0; j < m.getColumnNumber(); j++) {
-                if (m.getElem(i, j) != 0) {
-                    table.append(newCell());
-                    table.append(printValue(m, i, j));
-                    table.append(endCell());
-                }
-                else {
-                    table.append(newInvisibleCell());
-                    table.append(endCell());
-                }
-            }
-            table.append(endLine());
-        }
-        table.append(endTable());
+    public HTMLDrawer(IMatrix m) {
+        String drawBorder = "<style>table.matrix {border-color: green;visibility:hidden;}" +
+                "th.visible {border-color:red;visibility:visible;}" +
+                "th.invisible {visibility:hidden;}" +
+                "#borders:checked ~ table.matrix {visibility: visible;}</style>" +
+                "<input type=checkbox id=borders checked>Отрисовывать границы таблицы?";
         try (BufferedWriter br = new BufferedWriter(new FileWriter("out.html"))) {
-            br.write((table.toString()));
+            br.write(drawBorder);
+            br.write(printMatrix(m));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
+        try {
+            Desktop.getDesktop().open(new File("out.html"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
-    private static String newTable() {
-        return "<html><body><table border=3>";
+    @Override
+    protected String newTable() {
+        return "<html><body><table class=matrix border=1>";
     }
-    private static String endLine() {
+
+    @Override
+    protected String endLine() {
         return "</tr>";
     }
-    private static String newCell() {
-        return "<th bordercolor=black>";
+
+    @Override
+    protected String newCell() {
+        return "<th class=visible>";
     }
-    private static String endCell() {
+
+    @Override
+    protected String endCell() {
         return "</th>";
     }
-    private static String newInvisibleCell() {
-        return "<th bordercolor=white>";
+
+    @Override
+    protected String newInvisibleCell(long val) {
+        StringBuilder space = new StringBuilder();
+        for (int i = 0; i < Long.toString(val).length(); i++) {
+            space.append("-");
+        }
+        return "<th class=invisible>" + space;
     }
-    private static String newLine() {
+
+    @Override
+    protected String newLine() {
         return "<tr>";
     }
-    private static String endTable() {
+
+    @Override
+    protected String endTable() {
         return "</table></body></html>";
-    }
-    private static String printValue(IMatrix m, int row, int column) {
-        return String.valueOf(m.getElem(row, column));
     }
 }

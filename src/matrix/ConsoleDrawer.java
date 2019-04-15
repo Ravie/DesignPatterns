@@ -1,34 +1,41 @@
 package matrix;
 
-public class ConsoleDrawer implements IDrawer {
+public class ConsoleDrawer extends Drawer implements IDrawer {
+
+    public ConsoleDrawer(IMatrix m) {
+        System.out.println(printMatrix(m));
+    }
 
     @Override
-    public void printMatrix(IMatrix m) {
-        newTable();
-        for (int i = 0; i < m.getRowNumber(); i++) {
-            newLine();
-            for (int j = 0; j < m.getColumnNumber(); j++) {
-                newCell();
-                if(m.getElem(i,j) != 0)
-                    printValue(m, i, j);
-                else
-                    newCell();
-            }
+    protected String newTable() {
+        return "";
+    }
+    @Override
+    protected String endTable() {
+        return "\r\n";
+    }
+    @Override
+    protected String newCell() {
+        return "";
+    }
+    @Override
+    protected String newInvisibleCell(long val) {
+        StringBuilder space = new StringBuilder();
+        for (int i = 0; i < Long.toString(val).length(); i++) {
+            space.append("-");
         }
+        return space.toString();
     }
-
-    private static void newTable() {
-        System.out.println();
+    @Override
+    protected String endCell() {
+        return "\t";
     }
-    private static void newCell() {
-        System.out.print("\t");
+    @Override
+    protected String newLine() {
+        return "\r\n";
     }
-
-    private static void newLine() {
-        System.out.println();
-    }
-
-    private static void printValue(IMatrix m, int row, int column) {
-        System.out.print(m.getElem(row, column));
+    @Override
+    protected String endLine() {
+        return "";
     }
 }

@@ -21,15 +21,14 @@ public abstract class Matrix implements IMatrix {
         int index = in.nextInt();
         switch(index) {
             case 1:
-                this.drawer = new ConsoleDrawer();
+                this.drawer = new ConsoleDrawer(this);
                 break;
             case 2:
-                this.drawer = new HTMLDrawer();
+                this.drawer = new HTMLDrawer(this);
                 break;
             default:
                 System.out.println("Некорректный ввод");
         }
-        drawer.printMatrix(this);
     }
     public abstract IVector createVector(int column);
     public int getElem(int row, int column) { return matrix[row].getElem(column); }
