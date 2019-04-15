@@ -3,7 +3,7 @@ package matrix;
 import java.io.*;
 import java.awt.Desktop;
 
-public class HTMLDrawer extends Drawer implements IDrawer {
+public class HTMLDrawer extends Drawer {
 
     public HTMLDrawer(IMatrix m) {
         String drawBorder = "<style>table.matrix {border-color: green;visibility:hidden;}" +

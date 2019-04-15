@@ -1,6 +1,6 @@
 package matrix;
 
-public class ConsoleDrawer extends Drawer implements IDrawer {
+public class ConsoleDrawer extends Drawer {
 
     public ConsoleDrawer(IMatrix m) {
         System.out.println(printMatrix(m));
