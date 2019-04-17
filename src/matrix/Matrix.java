@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public abstract class Matrix implements IMatrix {
     private IVector[] matrix;
-    private Drawer drawer;
+    private IDrawer drawer;
     private int row, column;
 
     protected Matrix(int row, int column) {
