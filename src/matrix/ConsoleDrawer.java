@@ -2,7 +2,7 @@ package matrix;
 
 public class ConsoleDrawer extends Drawer implements IDrawer {
 
-    public ConsoleDrawer(IMatrix m) {
+    public void draw(IMatrix m) {
         System.out.println(printMatrix(m));
     }
 

@@ -15,6 +15,11 @@ public class ClientCode {
     }
 
     private static void matrixInfo(IMatrix m) {
+        IDrawer drawer = new HTMLDrawer();
+        m.setDrawer(drawer);
+        m.draw();
+        drawer = new ConsoleDrawer();
+        m.setDrawer(drawer);
         m.draw();
         System.out.println("sumElems: " + StatMatrix.sumValues(m));
         System.out.println("avgValue: " + StatMatrix.avgValue(m));

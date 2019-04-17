@@ -1,7 +1,7 @@
 package matrix;
 
 public abstract class Drawer {
-    public String printMatrix(IMatrix m) {
+    protected String printMatrix(IMatrix m) {
         long maxVal = StatMatrix.maxValue(m);
 
         StringBuilder table = new StringBuilder();
@@ -23,6 +23,7 @@ public abstract class Drawer {
         table.append(endTable());
         return table.toString();
     }
+    abstract public void draw(IMatrix m);
 
     abstract protected String newTable();
 

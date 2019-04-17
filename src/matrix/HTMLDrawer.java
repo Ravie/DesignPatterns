@@ -5,22 +5,22 @@ import java.awt.Desktop;
 
 public class HTMLDrawer extends Drawer implements IDrawer {
 
-    public HTMLDrawer(IMatrix m) {
+    public void draw(IMatrix m) {
         String drawBorder = "<style>table.matrix {border-color: green;visibility:hidden;}" +
                 "th.visible {border-color:red;visibility:visible;}" +
                 "th.invisible {visibility:hidden;}" +
                 "#borders:checked ~ table.matrix {visibility: visible;}</style>" +
                 "<input type=checkbox id=borders checked>Отрисовывать границы таблицы?";
-        try (BufferedWriter br = new BufferedWriter(new FileWriter("out.html"))) {
+        try (BufferedWriter br = new BufferedWriter(new FileWriter("out_"+m.getClass()+".html"))) {
             br.write(drawBorder);
-            br.write(printMatrix(m));
+            br.write(super.printMatrix(m));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
         try {
-            Desktop.getDesktop().open(new File("out.html"));
+            Desktop.getDesktop().open(new File("out_"+m.getClass()+".html"));
         } catch (IOException e) {
             e.printStackTrace();
         }

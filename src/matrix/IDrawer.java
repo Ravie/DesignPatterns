@@ -1,5 +1,5 @@
 package matrix;
 
 public interface IDrawer {
-    String printMatrix(IMatrix m);
+    void draw(IMatrix m);
 }
