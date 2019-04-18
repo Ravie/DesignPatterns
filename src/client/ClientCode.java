@@ -1,19 +1,18 @@
 package client;
 
-import drawer.ConsoleDrawer;
-import drawer.HTMLDrawer;
-import drawer.IDrawer;
+import drawer.*;
 import matrix.*;
+import wrapper.*;
 
 public class ClientCode {
     public static void main(String[] args) {
-        int row = 30, column = 30;
+        int row = 5, column = 5;
         Matrix dMatrix = new DenseMatrix(row, column);
-        InitMatrix.fillMatrix(dMatrix, 900, 100);
+        InitMatrix.fillMatrix(dMatrix, 25, 100);
         matrixInfo(dMatrix);
         System.out.println("-----------------------------------------------------------------");
         Matrix sMatrix = new SparseMatrix(row, column);
-        InitMatrix.fillMatrix(sMatrix, 400, 900);
+        InitMatrix.fillMatrix(sMatrix, 10, 100);
         matrixInfo(sMatrix);
     }
 
@@ -24,6 +23,17 @@ public class ClientCode {
         drawer = new ConsoleDrawer();
         m.setDrawer(drawer);
         m.draw();
+        MatrixWrapper wrap = new MatrixWrapper(m);
+        wrap.setDrawer(drawer);
+        wrap.randomMatrix();
+        wrap.randomMatrix();
+        wrap.randomMatrix();
+        wrap.randomMatrix();
+        wrap.randomMatrix();
+        wrap.randomMatrix();
+        wrap.draw();
+        wrap.restoreMatrix();
+        wrap.draw();
         System.out.println("sumElems: " + StatMatrix.sumValues(m));
         System.out.println("avgValue: " + StatMatrix.avgValue(m));
         System.out.println("maxValue: " + StatMatrix.maxValue(m));
