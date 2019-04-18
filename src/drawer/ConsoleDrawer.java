@@ -1,4 +1,6 @@
-package matrix;
+package drawer;
+
+import matrix.IMatrix;
 
 public class ConsoleDrawer extends Drawer implements IDrawer {
 

@@ -1,5 +1,8 @@
 package client;
 
+import drawer.ConsoleDrawer;
+import drawer.HTMLDrawer;
+import drawer.IDrawer;
 import matrix.*;
 
 public class ClientCode {

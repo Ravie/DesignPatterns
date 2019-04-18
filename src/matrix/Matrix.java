@@ -1,5 +1,7 @@
 package matrix;
 
+import drawer.IDrawer;
+
 public abstract class Matrix implements IMatrix {
     private IVector[] matrix;
     private IDrawer drawer;

@@ -1,4 +1,6 @@
-package matrix;
+package drawer;
+
+import matrix.IMatrix;
 
 import java.io.*;
 import java.awt.Desktop;

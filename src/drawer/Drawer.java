@@ -1,4 +1,7 @@
-package matrix;
+package drawer;
+
+import matrix.IMatrix;
+import matrix.StatMatrix;
 
 public abstract class Drawer {
     protected String printMatrix(IMatrix m) {
