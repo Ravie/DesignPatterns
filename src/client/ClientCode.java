@@ -6,30 +6,25 @@ import wrapper.*;
 
 public class ClientCode {
     public static void main(String[] args) {
-        int row = 5, column = 5;
+        int row = 20, column = 20;
         Matrix dMatrix = new DenseMatrix(row, column);
         InitMatrix.fillMatrix(dMatrix, 25, 100);
         matrixInfo(dMatrix);
-        System.out.println("-----------------------------------------------------------------");
-        Matrix sMatrix = new SparseMatrix(row, column);
-        InitMatrix.fillMatrix(sMatrix, 10, 100);
-        matrixInfo(sMatrix);
+        //System.out.println("-----------------------------------------------------------------");
+        //Matrix sMatrix = new SparseMatrix(row, column);
+        //InitMatrix.fillMatrix(sMatrix, 4, 100);
+        //matrixInfo(sMatrix);
     }
 
     private static void matrixInfo(IMatrix m) {
         IDrawer drawer = new HTMLDrawer();
         m.setDrawer(drawer);
         m.draw();
-        drawer = new ConsoleDrawer();
-        m.setDrawer(drawer);
-        m.draw();
+        //drawer = new ConsoleDrawer();
+        //m.setDrawer(drawer);
+        //m.draw();
         MatrixWrapper wrap = new MatrixWrapper(m);
         wrap.setDrawer(drawer);
-        wrap.randomMatrix();
-        wrap.randomMatrix();
-        wrap.randomMatrix();
-        wrap.randomMatrix();
-        wrap.randomMatrix();
         wrap.randomMatrix();
         wrap.draw();
         wrap.restoreMatrix();

@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="335cafb2-a4ef-4d39-888a-edb35754ed38" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/ClientCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/matrix/IMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matrix/IMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drawer/HTMLDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawer/HTMLDrawer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,20 +25,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/ClientCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="67" lean-forward="true" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/matrix/IMatrix.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,59 +40,70 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/matrix/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            <state relative-caret-position="334">
+              <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+              <folding>
+                <element signature="e#445#446#0" expanded="true" />
+                <element signature="e#481#482#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/matrix/HTMLDrawer.java">
+        <entry file="file://$PROJECT_DIR$/src/drawer/HTMLDrawer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+            <state relative-caret-position="149">
+              <caret line="12" column="80" lean-forward="true" selection-start-line="12" selection-start-column="80" selection-end-line="15" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1107#1108#0" expanded="true" />
-                <element signature="e#1185#1186#0" expanded="true" />
-                <element signature="e#1276#1277#0" expanded="true" />
-                <element signature="e#1354#1355#0" expanded="true" />
-                <element signature="e#1705#1706#0" expanded="true" />
-                <element signature="e#1801#1802#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/matrix/ConsoleDrawer.java">
+        <entry file="file://$PROJECT_DIR$/src/drawer/ConsoleDrawer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/drawer/Drawer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/matrix/SparseMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding>
-                <element signature="e#102#103#0" expanded="true" />
-                <element signature="e#152#153#0" expanded="true" />
-                <element signature="e#222#223#0" expanded="true" />
-                <element signature="e#728#729#0" expanded="true" />
-                <element signature="e#764#765#0" expanded="true" />
-                <element signature="e#371#372#0" expanded="true" />
-                <element signature="e#1331#1332#0" expanded="true" />
-                <element signature="e#1358#1359#0" expanded="true" />
-                <element signature="e#780#781#0" expanded="true" />
-                <element signature="e#852#853#0" expanded="true" />
+                <element signature="e#104#105#0" expanded="true" />
+                <element signature="e#138#139#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/matrix/Drawer.java">
+        <entry file="file://$PROJECT_DIR$/src/matrix/DenseMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+            <state relative-caret-position="34">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
-                <element signature="e#1105#1106#0" expanded="true" />
-                <element signature="e#1168#1169#0" expanded="true" />
+                <element signature="e#103#104#0" expanded="true" />
+                <element signature="e#137#138#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,12 +148,14 @@
         <option value="$PROJECT_DIR$/src/matrix/DenseMatrix.java" />
         <option value="$PROJECT_DIR$/src/matrix/SparseMatrix.java" />
         <option value="$PROJECT_DIR$/src/matrix/StatMatrix.java" />
-        <option value="$PROJECT_DIR$/src/matrix/IDrawer.java" />
-        <option value="$PROJECT_DIR$/src/matrix/Drawer.java" />
-        <option value="$PROJECT_DIR$/src/matrix/Matrix.java" />
-        <option value="$PROJECT_DIR$/src/matrix/ConsoleDrawer.java" />
         <option value="$PROJECT_DIR$/src/matrix/HTMLDrawer.java" />
+        <option value="$PROJECT_DIR$/src/matrix/ConsoleDrawer.java" />
+        <option value="$PROJECT_DIR$/src/matrix/Drawer.java" />
+        <option value="$PROJECT_DIR$/src/matrix/IDrawer.java" />
+        <option value="$PROJECT_DIR$/src/matrix/Matrix.java" />
         <option value="$PROJECT_DIR$/src/matrix/IMatrix.java" />
+        <option value="$PROJECT_DIR$/src/wrapper/MatrixWrapper.java" />
+        <option value="$PROJECT_DIR$/src/drawer/HTMLDrawer.java" />
         <option value="$PROJECT_DIR$/src/client/ClientCode.java" />
       </list>
     </option>
@@ -157,11 +166,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1176" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-12" />
+    <option name="width" value="933" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -191,7 +199,19 @@
               <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="drawer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="matrix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -206,7 +226,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553685438086" />
-    <property name="last_opened_file_path" value="F:/translationMOD" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -252,7 +272,10 @@
       <updated>1552462317193</updated>
       <workItem from="1554884117991" duration="8501000" />
       <workItem from="1555012835407" duration="4642000" />
-      <workItem from="1555319954675" duration="10590000" />
+      <workItem from="1555319954675" duration="10907000" />
+      <workItem from="1555364193094" duration="49000" />
+      <workItem from="1555495857423" duration="14628000" />
+      <workItem from="1556101433565" duration="4904000" />
     </task>
     <task id="LOCAL-00001" summary="First implementation">
       <created>1553112081891</created>
@@ -265,7 +288,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23733000" />
+    <option name="totallyTimeSpent" value="43631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1233" height="735" extended-state="6" />
@@ -278,26 +301,26 @@
       <window_info id="Image Layers" order="4" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49749163" weight="0.3283582" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50250834" side_tool="true" weight="0.3283582" />
-      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49872124" weight="0.32931036" />
-      <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.3283582" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49916387" weight="0.31674957" />
-      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49749163" weight="0.5671642" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49872124" weight="0.32931036" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.3283582" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3283582" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Theme Preview" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="3" visible="true" weight="0.16973244" />
-      <window_info anchor="right" id="Structure" order="4" weight="0.24978687" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.32992327" />
-      <window_info anchor="right" id="Palette" order="6" />
-      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="1" visible="true" weight="0.16973244" />
+      <window_info anchor="right" id="Ant Build" order="2" show_stripe_button="false" weight="0.24978687" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Structure" order="5" weight="0.24916388" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.32992327" />
+      <window_info anchor="right" id="Palette" order="7" />
+      <window_info anchor="right" id="Commander" order="8" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
       <window_info anchor="right" id="Database" order="10" />
     </layout>
@@ -307,30 +330,30 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" show_stripe_button="false" side_tool="true" weight="0.32992327" />
       <window_info id="Image Layers" order="4" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49957374" weight="0.3283582" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50042623" side_tool="true" weight="0.32931036" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49749163" weight="0.3283582" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50250834" side_tool="true" weight="0.3283582" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49916387" weight="0.5671642" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49872124" weight="0.32931036" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.1641791" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32931036" />
-      <window_info anchor="right" id="Database" order="0" />
-      <window_info anchor="right" id="Theme Preview" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="4" visible="true" weight="0.16973244" />
-      <window_info anchor="right" id="Structure" order="5" weight="0.24978687" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.3283582" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3283582" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="right" id="Theme Preview" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="1" visible="true" weight="0.16973244" />
+      <window_info anchor="right" id="Ant Build" order="2" show_stripe_button="false" weight="0.24978687" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Structure" order="5" weight="0.24916388" />
       <window_info anchor="right" id="Maven" order="6" weight="0.32992327" />
       <window_info anchor="right" id="Palette" order="7" />
       <window_info anchor="right" id="Commander" order="8" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="right" id="Database" order="10" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +362,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First implementation" />
     <option name="LAST_COMMIT_MESSAGE" value="First implementation" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Homework1.java" />
@@ -356,24 +383,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix/DenseVector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix/DenseMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="79" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
-          <folding>
-            <element signature="e#103#104#0" expanded="true" />
-            <element signature="e#137#138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix/StatMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -381,10 +390,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix/SparseVector.java">
+    <entry file="file://$PROJECT_DIR$/src/matrix/IVector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="68">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drawer/IDrawer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/matrix/IMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wrapper/MatrixWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1617#1618#0" expanded="true" />
+            <element signature="e#1703#1704#0" expanded="true" />
+            <element signature="e#1775#1776#0" expanded="true" />
+            <element signature="e#1819#1820#0" expanded="true" />
+            <element signature="e#1866#1867#0" expanded="true" />
+            <element signature="e#1905#1906#0" expanded="true" />
+            <element signature="e#1955#1956#0" expanded="true" />
+            <element signature="e#1997#1998#0" expanded="true" />
+            <element signature="e#2037#2038#0" expanded="true" />
+            <element signature="e#2070#2071#0" expanded="true" />
+            <element signature="e#2129#2130#0" expanded="true" />
+            <element signature="e#2165#2166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drawer/HTMLDrawer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="12" column="80" lean-forward="true" selection-start-line="12" selection-start-column="80" selection-end-line="15" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -402,94 +454,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix/IVector.java">
+    <entry file="file://$PROJECT_DIR$/src/matrix/SparseVector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        <state relative-caret-position="289">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/matrix/DenseVector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/matrix/DenseMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#103#104#0" expanded="true" />
+            <element signature="e#137#138#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix/InitMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="68" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="68" />
+        <state relative-caret-position="255">
+          <caret line="15" column="69" lean-forward="true" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix/ConsoleDrawer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-          <folding>
-            <element signature="e#102#103#0" expanded="true" />
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#1331#1332#0" expanded="true" />
-            <element signature="e#1358#1359#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix/IDrawer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix/HTMLDrawer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1107#1108#0" expanded="true" />
-            <element signature="e#1185#1186#0" expanded="true" />
-            <element signature="e#1276#1277#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
-            <element signature="e#1705#1706#0" expanded="true" />
-            <element signature="e#1801#1802#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix/Drawer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding>
-            <element signature="e#1105#1106#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix/IMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        <state relative-caret-position="334">
+          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/ClientCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="67" lean-forward="true" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+        <state relative-caret-position="119">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drawer/ConsoleDrawer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drawer/Drawer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
