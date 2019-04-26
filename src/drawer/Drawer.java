@@ -3,8 +3,8 @@ package drawer;
 import matrix.IMatrix;
 import matrix.StatMatrix;
 
-public abstract class Drawer {
-    protected String printMatrix(IMatrix m) {
+public abstract class Drawer implements IDrawer {
+    protected String printSparseMatrix(IMatrix m) {
         long maxVal = StatMatrix.maxValue(m);
 
         StringBuilder table = new StringBuilder();
@@ -26,6 +26,23 @@ public abstract class Drawer {
         table.append(endTable());
         return table.toString();
     }
+
+    protected String printDenseMatrix(IMatrix m) {
+        StringBuilder table = new StringBuilder();
+        table.append(newTable());
+        for (int i = 0; i < m.getRowNumber(); i++) {
+            table.append(newLine());
+            for (int j = 0; j < m.getColumnNumber(); j++) {
+                table.append(newCell());
+                table.append(printValue(m, i, j));
+                table.append(endCell());
+            }
+            table.append(endLine());
+        }
+        table.append(endTable());
+        return table.toString();
+    }
+
     abstract public void draw(IMatrix m);
 
     abstract protected String newTable();

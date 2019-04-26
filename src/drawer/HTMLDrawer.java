@@ -17,7 +17,10 @@ public class HTMLDrawer extends Drawer implements IDrawer {
                 "<input type=checkbox id=borders checked>Отрисовывать границы таблицы?";
         try (BufferedWriter br = new BufferedWriter(new FileWriter(className+"_"+timestamp+".html"))) {
             br.write(drawBorder);
-            br.write(super.printMatrix(m));
+            if(m.getClass().getName().equals("matrix.DenseMatrix"))
+                br.write(super.printDenseMatrix(m));
+            else if(m.getClass().getName().equals("matrix.SparseMatrix"))
+                br.write(super.printSparseMatrix(m));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
