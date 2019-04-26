@@ -9,13 +9,13 @@ public class HTMLDrawer extends Drawer implements IDrawer {
 
     public void draw(IMatrix m) {
         long timestamp = System.nanoTime();
-        String className = m.getClass().toString().substring(6);
+        String className = m.getClass().getName();
         String drawBorder = "<style>table.matrix {border-color: green;visibility:hidden;}" +
                 "th.visible {border-color:red;visibility:visible;}" +
                 "th.invisible {visibility:hidden;}" +
                 "#borders:checked ~ table.matrix {visibility: visible;}</style>" +
                 "<input type=checkbox id=borders checked>Отрисовывать границы таблицы?";
-        try (BufferedWriter br = new BufferedWriter(new FileWriter("out_"+className+"_"+timestamp+".html"))) {
+        try (BufferedWriter br = new BufferedWriter(new FileWriter(className+"_"+timestamp+".html"))) {
             br.write(drawBorder);
             br.write(super.printMatrix(m));
         } catch (FileNotFoundException e) {
@@ -24,7 +24,7 @@ public class HTMLDrawer extends Drawer implements IDrawer {
             e.printStackTrace();
         }
         try {
-            Desktop.getDesktop().open(new File("out_"+className+"_"+timestamp+".html"));
+            Desktop.getDesktop().open(new File(className+"_"+timestamp+".html"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -54,7 +54,7 @@ public class HTMLDrawer extends Drawer implements IDrawer {
     protected String newInvisibleCell(long val) {
         StringBuilder space = new StringBuilder();
         for (int i = 0; i < Long.toString(val).length(); i++) {
-            space.append("-");
+            space.append("0");
         }
         return "<th class=invisible>" + space;
     }
