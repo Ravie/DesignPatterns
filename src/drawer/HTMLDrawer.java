@@ -7,19 +7,18 @@ import java.awt.Desktop;
 
 public class HTMLDrawer extends Drawer implements IDrawer {
 
-    public void draw(IMatrix m) {
+    private void generateHtml(IMatrix m, String MatrixType) {
         long timestamp = System.nanoTime();
-        String className = m.getClass().getName();
         String drawBorder = "<style>table.matrix {border-color: green;visibility:hidden;}" +
                 "th.visible {border-color:red;visibility:visible;}" +
                 "th.invisible {visibility:hidden;}" +
                 "#borders:checked ~ table.matrix {visibility: visible;}</style>" +
                 "<input type=checkbox id=borders checked>Отрисовывать границы таблицы?";
-        try (BufferedWriter br = new BufferedWriter(new FileWriter(className+"_"+timestamp+".html"))) {
+        try (BufferedWriter br = new BufferedWriter(new FileWriter(MatrixType+"_Matrix_"+timestamp+".html"))) {
             br.write(drawBorder);
-            if(m.getClass().getName().equals("matrix.DenseMatrix"))
+            if(MatrixType.equals("Dense"))
                 br.write(super.printDenseMatrix(m));
-            else if(m.getClass().getName().equals("matrix.SparseMatrix"))
+            else if(MatrixType.equals("Sparse"))
                 br.write(super.printSparseMatrix(m));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -27,10 +26,20 @@ public class HTMLDrawer extends Drawer implements IDrawer {
             e.printStackTrace();
         }
         try {
-            Desktop.getDesktop().open(new File(className+"_"+timestamp+".html"));
+            Desktop.getDesktop().open(new File(MatrixType+"_Matrix_"+timestamp+".html"));
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public void drawDenseMatrix(IMatrix m) {
+        generateHtml(m, "Dense");
+    }
+
+    @Override
+    public void drawSparseMatrix(IMatrix m) {
+        generateHtml(m, "Sparse");
     }
 
     @Override

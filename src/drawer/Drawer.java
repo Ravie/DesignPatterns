@@ -43,7 +43,9 @@ public abstract class Drawer implements IDrawer {
         return table.toString();
     }
 
-    abstract public void draw(IMatrix m);
+    abstract public void drawDenseMatrix(IMatrix m);
+
+    abstract public void drawSparseMatrix(IMatrix m);
 
     abstract protected String newTable();
 

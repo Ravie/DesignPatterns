@@ -19,8 +19,11 @@ public abstract class Matrix implements IMatrix {
         this.drawer = drawer;
     }
 
-    public void draw() {
-        drawer.draw(this);
+    public void drawSparseMatrix() {
+        drawer.drawSparseMatrix(this);
+    }
+    public void drawDenseMatrix() {
+        drawer.drawDenseMatrix(this);
     }
     public abstract IVector createVector(int column);
     public int getElem(int row, int column) { return matrix[row].getElem(column); }

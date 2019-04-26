@@ -67,8 +67,13 @@ public class MatrixWrapper implements IMatrix {
     }
 
     @Override
-    public void draw() {
-        drawer.draw(this);
+    public void drawDenseMatrix() {
+        drawer.drawDenseMatrix(this);
+    }
+
+    @Override
+    public void drawSparseMatrix() {
+        drawer.drawSparseMatrix(this);
     }
 
     @Override

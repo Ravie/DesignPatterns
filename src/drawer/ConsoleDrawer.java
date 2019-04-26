@@ -4,11 +4,14 @@ import matrix.IMatrix;
 
 public class ConsoleDrawer extends Drawer implements IDrawer {
 
-    public void draw(IMatrix m) {
-        if(m.getClass().getName().equals("matrix.DenseMatrix"))
-            System.out.println(super.printDenseMatrix(m));
-        else if(m.getClass().getName().equals("matrix.SparseMatrix"))
-            System.out.println(super.printSparseMatrix(m));
+    @Override
+    public void drawDenseMatrix(IMatrix m) {
+        System.out.println(super.printDenseMatrix(m));
+    }
+
+    @Override
+    public void drawSparseMatrix(IMatrix m) {
+        System.out.println(super.printSparseMatrix(m));
     }
 
     @Override
