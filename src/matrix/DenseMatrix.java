@@ -6,5 +6,10 @@ public class DenseMatrix extends Matrix {
     }
 
     @Override
+    public void draw() {
+        drawer.drawDenseMatrix(this);
+    }
+
+    @Override
     public IVector createVector(int column) { return new DenseVector(column); }
 }

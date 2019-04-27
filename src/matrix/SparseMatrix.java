@@ -6,5 +6,10 @@ public class SparseMatrix extends Matrix{
     }
 
     @Override
+    public void draw() {
+        drawer.drawSparseMatrix(this);
+    }
+
+    @Override
     public IVector createVector(int column) { return new SparseVector(); }
 }
