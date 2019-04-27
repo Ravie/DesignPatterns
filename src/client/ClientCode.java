@@ -73,7 +73,7 @@ public class ClientCode {
         m.setDrawer(drawer);
         m.draw();
 
-        MatrixWrapper wrap = new MatrixWrapper(m);
+        RandomSwapper wrap = new RandomSwapper(m);
         wrap.randomMatrix();
         wrap.draw(new HTMLDrawer());
         wrap.restoreMatrix();

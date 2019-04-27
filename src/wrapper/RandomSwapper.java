@@ -6,12 +6,12 @@ import matrix.IPrintable;
 
 import java.util.*;
 
-public class MatrixWrapper implements IMatrix, IPrintable {
+public class RandomSwapper implements IMatrix, IPrintable {
     private IMatrix m;
     private Map<Integer, Integer> rowsChangeLog = new HashMap<>();
     private Map<Integer, Integer> columnsChangeLog = new HashMap<>();
 
-    public MatrixWrapper(IMatrix m) {
+    public RandomSwapper(IMatrix m) {
         this.m = m;
         for (int i = 0; i < this.m.getRowNumber(); i++)
             rowsChangeLog.put(i, i);
