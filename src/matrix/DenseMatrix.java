@@ -25,5 +25,7 @@ public class DenseMatrix extends Matrix {
     }
 
     @Override
-    public IVector createVector(int column) { return new DenseVector(column); }
+    public IVector createVector(int column) {
+        return new DenseVector(column);
+    }
 }

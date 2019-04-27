@@ -3,7 +3,7 @@ package matrix;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class SparseVector implements IVector{
+public class SparseVector implements IVector {
     private LinkedList<Integer> sv;
     private ArrayList<Integer> columnNum;
 
@@ -13,14 +13,14 @@ public class SparseVector implements IVector{
     }
 
     public int getElem(int index) {
-        if(columnNum.contains(index))
+        if (columnNum.contains(index))
             return sv.get(columnNum.indexOf(index));
         else
             return 0;
     }
 
     public void setElem(int index, int elem) {
-        if(!columnNum.contains(index)){
+        if (!columnNum.contains(index)) {
             sv.add(elem);
             columnNum.add(index);
         } else {

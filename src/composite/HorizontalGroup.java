@@ -36,7 +36,7 @@ public class HorizontalGroup implements IMatrix, IPrintable {
                 startOfMatrix += matrix.getColumnNumber();
             }
         }
-        if(!isAdded)
+        if (!isAdded)
             throw new ArrayIndexOutOfBoundsException("Element has not been added");
     }
 

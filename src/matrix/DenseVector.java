@@ -9,8 +9,8 @@ public class DenseVector implements IVector {
     DenseVector(int size) {
         this.size = size;
         tv = new ArrayList<>(size);
-        for(int i=0;i<size;i++)
-            tv.add(i,0);
+        for (int i = 0; i < size; i++)
+            tv.add(i, 0);
     }
 
     public int getElem(int index) {

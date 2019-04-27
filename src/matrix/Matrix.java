@@ -15,9 +15,22 @@ public abstract class Matrix implements IMatrix, IPrintable {
     }
 
     public abstract void draw(IDrawer drawer);
+
     public abstract IVector createVector(int column);
-    public int getElem(int row, int column) { return matrix[row].getElem(column); }
-    public void setElem(int row, int column, int elem) { matrix[row].setElem(column, elem); }
-    public int getRowNumber() { return row; }
-    public int getColumnNumber() { return column; }
+
+    public int getElem(int row, int column) {
+        return matrix[row].getElem(column);
+    }
+
+    public void setElem(int row, int column, int elem) {
+        matrix[row].setElem(column, elem);
+    }
+
+    public int getRowNumber() {
+        return row;
+    }
+
+    public int getColumnNumber() {
+        return column;
+    }
 }

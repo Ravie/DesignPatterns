@@ -2,7 +2,7 @@ package matrix;
 
 import drawer.IDrawer;
 
-public class SparseMatrix extends Matrix{
+public class SparseMatrix extends Matrix {
     public SparseMatrix(int row, int column) {
         super(row, column);
     }
@@ -32,5 +32,7 @@ public class SparseMatrix extends Matrix{
     }
 
     @Override
-    public IVector createVector(int column) { return new SparseVector(); }
+    public IVector createVector(int column) {
+        return new SparseVector();
+    }
 }
