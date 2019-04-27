@@ -1,12 +1,14 @@
 package matrix;
 
+import drawer.IDrawer;
+
 public class DenseMatrix extends Matrix {
     public DenseMatrix(int row, int column) {
         super(row, column);
     }
 
     @Override
-    public void draw() {
+    public void draw(IDrawer drawer) {
         drawer.draw(this, "Dense");
     }
 

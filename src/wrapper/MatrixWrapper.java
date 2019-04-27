@@ -7,7 +7,6 @@ import java.util.*;
 
 public class MatrixWrapper implements IMatrix {
     private IMatrix m;
-    private IDrawer drawer;
     private Map<Integer, Integer> rowsChangeLog = new HashMap<>();
     private Map<Integer, Integer> columnsChangeLog = new HashMap<>();
 
@@ -67,12 +66,7 @@ public class MatrixWrapper implements IMatrix {
     }
 
     @Override
-    public void draw() {
+    public void draw(IDrawer drawer) {
         drawer.draw(this, m.getClass().getName());
-    }
-
-    @Override
-    public void setDrawer(IDrawer drawer) {
-        this.drawer = drawer;
     }
 }

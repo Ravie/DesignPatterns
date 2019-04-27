@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="335cafb2-a4ef-4d39-888a-edb35754ed38" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/drawer/ConsoleDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawer/ConsoleDrawer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawer/Drawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawer/Drawer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawer/HTMLDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawer/HTMLDrawer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/matrix/DenseMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matrix/DenseMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/matrix/IMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matrix/IMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/matrix/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matrix/Matrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/matrix/SparseMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matrix/SparseMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wrapper/MatrixWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wrapper/MatrixWrapper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/matrix/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -40,7 +34,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/ClientCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
+            <state relative-caret-position="391">
               <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -65,10 +59,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/matrix/IMatrix.java">
+        <entry file="file://$PROJECT_DIR$/src/wrapper/MatrixWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            <state relative-caret-position="136">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1617#1618#0" expanded="true" />
+                <element signature="e#1703#1704#0" expanded="true" />
+                <element signature="e#1775#1776#0" expanded="true" />
+                <element signature="e#1819#1820#0" expanded="true" />
+                <element signature="e#1866#1867#0" expanded="true" />
+                <element signature="e#1905#1906#0" expanded="true" />
+                <element signature="e#1955#1956#0" expanded="true" />
+                <element signature="e#1997#1998#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,13 +82,21 @@
         <entry file="file://$PROJECT_DIR$/src/matrix/SparseMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="35" />
+              <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
               <folding>
                 <element signature="e#104#105#0" expanded="true" />
                 <element signature="e#138#139#0" expanded="true" />
-                <element signature="e#178#179#0" expanded="true" />
                 <element signature="e#221#222#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/matrix/IMatrix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -135,7 +148,6 @@
         <option value="$PROJECT_DIR$/src/wrapper/DrawerWrapper.java" />
         <option value="$PROJECT_DIR$/src/client/ClientCode.java" />
         <option value="$PROJECT_DIR$/src/drawer/IDrawer.java" />
-        <option value="$PROJECT_DIR$/src/wrapper/MatrixWrapper.java" />
         <option value="$PROJECT_DIR$/src/drawer/ConsoleDrawer.java" />
         <option value="$PROJECT_DIR$/src/drawer/HTMLDrawer.java" />
         <option value="$PROJECT_DIR$/src/drawer/Drawer.java" />
@@ -143,6 +155,7 @@
         <option value="$PROJECT_DIR$/src/matrix/SparseMatrix.java" />
         <option value="$PROJECT_DIR$/src/matrix/DenseMatrix.java" />
         <option value="$PROJECT_DIR$/src/matrix/IMatrix.java" />
+        <option value="$PROJECT_DIR$/src/wrapper/MatrixWrapper.java" />
       </list>
     </option>
   </component>
@@ -267,7 +280,7 @@
       <workItem from="1556101433565" duration="5137000" />
       <workItem from="1556293264564" duration="35000" />
       <workItem from="1556293368603" duration="617000" />
-      <workItem from="1556302044003" duration="24190000" />
+      <workItem from="1556302044003" duration="25930000" />
     </task>
     <task id="LOCAL-00001" summary="First implementation">
       <created>1553112081891</created>
@@ -280,7 +293,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68706000" />
+    <option name="totallyTimeSpent" value="70446000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1233" height="735" extended-state="6" />
@@ -474,23 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/wrapper/MatrixWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="31" lean-forward="true" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1617#1618#0" expanded="true" />
-            <element signature="e#1703#1704#0" expanded="true" />
-            <element signature="e#1775#1776#0" expanded="true" />
-            <element signature="e#1819#1820#0" expanded="true" />
-            <element signature="e#1905#1906#0" expanded="true" />
-            <element signature="e#1955#1956#0" expanded="true" />
-            <element signature="e#1997#1998#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/drawer/ConsoleDrawer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -518,32 +514,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/ClientCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/matrix/IMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix/SparseMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="35" />
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
           <folding>
             <element signature="e#104#105#0" expanded="true" />
             <element signature="e#138#139#0" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
             <element signature="e#221#222#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/ClientCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -561,10 +563,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix/IMatrix.java">
+    <entry file="file://$PROJECT_DIR$/src/wrapper/MatrixWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        <state relative-caret-position="136">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1617#1618#0" expanded="true" />
+            <element signature="e#1703#1704#0" expanded="true" />
+            <element signature="e#1775#1776#0" expanded="true" />
+            <element signature="e#1819#1820#0" expanded="true" />
+            <element signature="e#1866#1867#0" expanded="true" />
+            <element signature="e#1905#1906#0" expanded="true" />
+            <element signature="e#1955#1956#0" expanded="true" />
+            <element signature="e#1997#1998#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

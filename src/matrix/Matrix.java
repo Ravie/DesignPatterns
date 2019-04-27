@@ -4,7 +4,6 @@ import drawer.IDrawer;
 
 public abstract class Matrix implements IMatrix {
     private IVector[] matrix;
-    protected IDrawer drawer;
     private int row, column;
 
     protected Matrix(int row, int column) {
@@ -15,11 +14,7 @@ public abstract class Matrix implements IMatrix {
             matrix[i] = createVector(column);
     }
 
-    public void setDrawer(IDrawer drawer) {
-        this.drawer = drawer;
-    }
-
-    public abstract void draw();
+    public abstract void draw(IDrawer drawer);
     public abstract IVector createVector(int column);
     public int getElem(int row, int column) { return matrix[row].getElem(column); }
     public void setElem(int row, int column, int elem) { matrix[row].setElem(column, elem); }

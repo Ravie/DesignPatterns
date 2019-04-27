@@ -7,6 +7,5 @@ public interface IMatrix {
     void setElem(int row, int column, int elem);
     int getRowNumber();
     int getColumnNumber();
-    void draw();
-    void setDrawer(IDrawer drawer);
+    void draw(IDrawer drawer);
 }
