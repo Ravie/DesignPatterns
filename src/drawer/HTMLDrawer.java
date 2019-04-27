@@ -7,7 +7,7 @@ import java.awt.Desktop;
 
 public class HTMLDrawer extends Drawer implements IDrawer {
 
-    private void generateHtml(IMatrix m, String MatrixType) {
+    public void draw(IMatrix m, String MatrixType) {
         long timestamp = System.nanoTime();
         String drawBorder = "<style>table.matrix {border-color: green;visibility:hidden;}" +
                 "th.visible {border-color:red;visibility:visible;}" +
@@ -30,16 +30,6 @@ public class HTMLDrawer extends Drawer implements IDrawer {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-
-    @Override
-    public void drawDenseMatrix(IMatrix m) {
-        generateHtml(m, "Dense");
-    }
-
-    @Override
-    public void drawSparseMatrix(IMatrix m) {
-        generateHtml(m, "Sparse");
     }
 
     @Override

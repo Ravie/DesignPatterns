@@ -29,9 +29,9 @@ public class ClientCode {
         MatrixWrapper wrap = new MatrixWrapper(m);
         wrap.setDrawer(new HTMLDrawer());
         wrap.randomMatrix();
-        wrap.drawDenseMatrix();
+        wrap.draw();
         wrap.restoreMatrix();
-        wrap.drawDenseMatrix();
+        wrap.draw();
 
         /*
         System.out.println("sumElems: " + StatMatrix.sumValues(m));

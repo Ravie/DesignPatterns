@@ -7,7 +7,7 @@ public class SparseMatrix extends Matrix{
 
     @Override
     public void draw() {
-        drawer.drawSparseMatrix(this);
+        drawer.draw(this, "Sparse");
     }
 
     @Override

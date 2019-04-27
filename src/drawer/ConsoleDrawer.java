@@ -5,13 +5,11 @@ import matrix.IMatrix;
 public class ConsoleDrawer extends Drawer implements IDrawer {
 
     @Override
-    public void drawDenseMatrix(IMatrix m) {
-        System.out.println(super.printDenseMatrix(m));
-    }
-
-    @Override
-    public void drawSparseMatrix(IMatrix m) {
-        System.out.println(super.printSparseMatrix(m));
+    public void draw(IMatrix m, String MatrixType) {
+        if(MatrixType.equals("Dense"))
+            System.out.println(super.printDenseMatrix(m));
+        else if(MatrixType.equals("Sparse"))
+            System.out.println(super.printSparseMatrix(m));
     }
 
     @Override

@@ -7,7 +7,7 @@ public class DenseMatrix extends Matrix {
 
     @Override
     public void draw() {
-        drawer.drawDenseMatrix(this);
+        drawer.draw(this, "Dense");
     }
 
     @Override
