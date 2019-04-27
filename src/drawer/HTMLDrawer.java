@@ -3,8 +3,9 @@ package drawer;
 import java.io.*;
 import java.awt.Desktop;
 
-public class HTMLDrawer extends Drawer implements IDrawer {
+public class HTMLDrawer implements IDrawer {
 
+    @Override
     public void draw(String matrixLayout) {
         long timestamp = System.nanoTime();
         String drawBorder = "<style>table.matrix {border-color: green;visibility:hidden;}" +

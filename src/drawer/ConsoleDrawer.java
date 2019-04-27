@@ -1,6 +1,6 @@
 package drawer;
 
-public class ConsoleDrawer extends Drawer implements IDrawer {
+public class ConsoleDrawer implements IDrawer {
 
     @Override
     public void draw(String matrixLayout) {
@@ -11,14 +11,17 @@ public class ConsoleDrawer extends Drawer implements IDrawer {
     public String newTable() {
         return "";
     }
+
     @Override
     public String endTable() {
         return "\r\n";
     }
+
     @Override
     public String newCell() {
         return "";
     }
+
     @Override
     public String newInvisibleCell(long val) {
         StringBuilder space = new StringBuilder();
@@ -27,14 +30,17 @@ public class ConsoleDrawer extends Drawer implements IDrawer {
         }
         return space.toString();
     }
+
     @Override
     public String endCell() {
         return "\t";
     }
+
     @Override
     public String newLine() {
         return "\r\n";
     }
+    
     @Override
     public String endLine() {
         return "";
