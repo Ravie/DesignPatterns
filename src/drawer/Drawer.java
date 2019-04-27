@@ -4,7 +4,7 @@ import matrix.IMatrix;
 import matrix.StatMatrix;
 
 public abstract class Drawer implements IDrawer {
-    protected String printSparseMatrix(IMatrix m) {
+    protected String drawSparseMatrix(IMatrix m) {
         long maxVal = StatMatrix.maxValue(m);
 
         StringBuilder table = new StringBuilder();
@@ -27,7 +27,7 @@ public abstract class Drawer implements IDrawer {
         return table.toString();
     }
 
-    protected String printDenseMatrix(IMatrix m) {
+    protected String drawDenseMatrix(IMatrix m) {
         StringBuilder table = new StringBuilder();
         table.append(newTable());
         for (int i = 0; i < m.getRowNumber(); i++) {

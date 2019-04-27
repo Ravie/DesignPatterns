@@ -17,9 +17,9 @@ public class HTMLDrawer extends Drawer implements IDrawer {
         try (BufferedWriter br = new BufferedWriter(new FileWriter(MatrixType+"_"+timestamp+".html"))) {
             br.write(drawBorder);
             if(MatrixType.equals("matrix.DenseMatrix"))
-                br.write(super.printDenseMatrix(m));
+                br.write(super.drawDenseMatrix(m));
             else if(MatrixType.equals("matrix.SparseMatrix"))
-                br.write(super.printSparseMatrix(m));
+                br.write(super.drawSparseMatrix(m));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

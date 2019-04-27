@@ -7,9 +7,9 @@ public class ConsoleDrawer extends Drawer implements IDrawer {
     @Override
     public void draw(IMatrix m, String MatrixType) {
         if(MatrixType.equals("matrix.DenseMatrix"))
-            System.out.println(super.printDenseMatrix(m));
+            System.out.println(super.drawDenseMatrix(m));
         else if(MatrixType.equals("matrix.SparseMatrix"))
-            System.out.println(super.printSparseMatrix(m));
+            System.out.println(super.drawSparseMatrix(m));
     }
 
     @Override
