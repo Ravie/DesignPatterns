@@ -1,31 +1,26 @@
 package drawer;
 
-import matrix.IMatrix;
-
 public class ConsoleDrawer extends Drawer implements IDrawer {
 
     @Override
-    public void draw(IMatrix m, String MatrixType) {
-        if(MatrixType.equals("matrix.DenseMatrix"))
-            System.out.println(super.drawDenseMatrix(m));
-        else if(MatrixType.equals("matrix.SparseMatrix"))
-            System.out.println(super.drawSparseMatrix(m));
+    public void draw(String matrixLayout) {
+        System.out.println(matrixLayout);
     }
 
     @Override
-    protected String newTable() {
+    public String newTable() {
         return "";
     }
     @Override
-    protected String endTable() {
+    public String endTable() {
         return "\r\n";
     }
     @Override
-    protected String newCell() {
+    public String newCell() {
         return "";
     }
     @Override
-    protected String newInvisibleCell(long val) {
+    public String newInvisibleCell(long val) {
         StringBuilder space = new StringBuilder();
         for (int i = 0; i < Long.toString(val).length(); i++) {
             space.append("-");
@@ -33,15 +28,15 @@ public class ConsoleDrawer extends Drawer implements IDrawer {
         return space.toString();
     }
     @Override
-    protected String endCell() {
+    public String endCell() {
         return "\t";
     }
     @Override
-    protected String newLine() {
+    public String newLine() {
         return "\r\n";
     }
     @Override
-    protected String endLine() {
+    public String endLine() {
         return "";
     }
 }
