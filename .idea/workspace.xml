@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="335cafb2-a4ef-4d39-888a-edb35754ed38" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/client/ClientCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/drawer/ConsoleDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawer/ConsoleDrawer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawer/Drawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawer/Drawer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/drawer/HTMLDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawer/HTMLDrawer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawer/IDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawer/IDrawer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/matrix/DenseMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matrix/DenseMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/matrix/SparseMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/matrix/SparseMatrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/wrapper/MatrixWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wrapper/MatrixWrapper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,71 +25,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/drawer/ConsoleDrawer.java">
+        <entry file="file://$PROJECT_DIR$/src/client/ClientCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="59" lean-forward="true" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/drawer/HTMLDrawer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+            <state relative-caret-position="266">
+              <caret line="32" column="29" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="32" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/matrix/IMatrix.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/drawer/Drawer.java">
+        <entry file="file://$PROJECT_DIR$/src/drawer/HTMLDrawer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+            <state relative-caret-position="467">
+              <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/drawer/IDrawer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/wrapper/MatrixWrapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1617#1618#0" expanded="true" />
-                <element signature="e#1703#1704#0" expanded="true" />
-                <element signature="e#1775#1776#0" expanded="true" />
-                <element signature="e#1819#1820#0" expanded="true" />
-                <element signature="e#1866#1867#0" expanded="true" />
-                <element signature="e#1905#1906#0" expanded="true" />
-                <element signature="e#1955#1956#0" expanded="true" />
-                <element signature="e#1997#1998#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,10 +99,10 @@
         <option value="$PROJECT_DIR$/src/drawer/IDrawer.java" />
         <option value="$PROJECT_DIR$/src/matrix/DenseMatrix.java" />
         <option value="$PROJECT_DIR$/src/matrix/SparseMatrix.java" />
-        <option value="$PROJECT_DIR$/src/drawer/HTMLDrawer.java" />
-        <option value="$PROJECT_DIR$/src/drawer/ConsoleDrawer.java" />
         <option value="$PROJECT_DIR$/src/drawer/Drawer.java" />
         <option value="$PROJECT_DIR$/src/wrapper/MatrixWrapper.java" />
+        <option value="$PROJECT_DIR$/src/drawer/ConsoleDrawer.java" />
+        <option value="$PROJECT_DIR$/src/drawer/HTMLDrawer.java" />
       </list>
     </option>
   </component>
@@ -279,7 +227,7 @@
       <workItem from="1556101433565" duration="5137000" />
       <workItem from="1556293264564" duration="35000" />
       <workItem from="1556293368603" duration="617000" />
-      <workItem from="1556302044003" duration="21238000" />
+      <workItem from="1556302044003" duration="21550000" />
     </task>
     <task id="LOCAL-00001" summary="First implementation">
       <created>1553112081891</created>
@@ -292,7 +240,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65754000" />
+    <option name="totallyTimeSpent" value="66066000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1233" height="735" extended-state="6" />
@@ -512,44 +460,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/ClientCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/drawer/ConsoleDrawer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="59" lean-forward="true" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/drawer/HTMLDrawer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix/IMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/wrapper/MatrixWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
+        <state relative-caret-position="68">
+          <caret line="50" column="79" lean-forward="true" selection-start-line="50" selection-start-column="79" selection-end-line="55" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1617#1618#0" expanded="true" />
@@ -575,6 +489,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/matrix/IMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drawer/ConsoleDrawer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="59" lean-forward="true" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/ClientCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="32" column="29" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="32" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drawer/HTMLDrawer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

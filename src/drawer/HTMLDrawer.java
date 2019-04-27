@@ -14,11 +14,11 @@ public class HTMLDrawer extends Drawer implements IDrawer {
                 "th.invisible {visibility:hidden;}" +
                 "#borders:checked ~ table.matrix {visibility: visible;}</style>" +
                 "<input type=checkbox id=borders checked>Отрисовывать границы таблицы?";
-        try (BufferedWriter br = new BufferedWriter(new FileWriter(MatrixType+"_Matrix_"+timestamp+".html"))) {
+        try (BufferedWriter br = new BufferedWriter(new FileWriter(MatrixType+"_"+timestamp+".html"))) {
             br.write(drawBorder);
-            if(MatrixType.equals("Dense"))
+            if(MatrixType.equals("matrix.DenseMatrix"))
                 br.write(super.printDenseMatrix(m));
-            else if(MatrixType.equals("Sparse"))
+            else if(MatrixType.equals("matrix.SparseMatrix"))
                 br.write(super.printSparseMatrix(m));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -26,7 +26,7 @@ public class HTMLDrawer extends Drawer implements IDrawer {
             e.printStackTrace();
         }
         try {
-            Desktop.getDesktop().open(new File(MatrixType+"_Matrix_"+timestamp+".html"));
+            Desktop.getDesktop().open(new File(MatrixType+"_"+timestamp+".html"));
         } catch (IOException e) {
             e.printStackTrace();
         }

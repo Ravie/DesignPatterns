@@ -68,7 +68,7 @@ public class MatrixWrapper implements IMatrix {
 
     @Override
     public void draw() {
-        drawer.draw(this);
+        drawer.draw(this, m.getClass().getName());
     }
 
     @Override
