@@ -10,8 +10,8 @@ public class InitMatrix {
         final Random random = new Random();
         int curNonZero = 0;
         while (curNonZero < nonzeroValues) {
-            int rndRow = random.nextInt(m.getColumnNumber());
-            int rndColumn = random.nextInt(m.getRowNumber());
+            int rndRow = random.nextInt(m.getRowNumber());
+            int rndColumn = random.nextInt(m.getColumnNumber());
             if (m.getElem(rndRow, rndColumn) == 0) {
                 m.setElem(rndRow, rndColumn, random.nextInt(maxValue) + 1);
                 curNonZero++;
