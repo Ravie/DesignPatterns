@@ -2,10 +2,11 @@ package wrapper;
 
 import drawer.IDrawer;
 import matrix.IMatrix;
+import matrix.IPrintable;
 
 import java.util.*;
 
-public class MatrixWrapper implements IMatrix {
+public class MatrixWrapper implements IMatrix, IPrintable {
     private IMatrix m;
     private Map<Integer, Integer> rowsChangeLog = new HashMap<>();
     private Map<Integer, Integer> columnsChangeLog = new HashMap<>();

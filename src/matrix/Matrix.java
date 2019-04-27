@@ -2,7 +2,7 @@ package matrix;
 
 import drawer.IDrawer;
 
-public abstract class Matrix implements IMatrix {
+public abstract class Matrix implements IMatrix, IPrintable {
     private IVector[] matrix;
     private int row, column;
 
