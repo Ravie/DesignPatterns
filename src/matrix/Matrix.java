@@ -1,8 +1,6 @@
 package matrix;
 
-import drawer.IDrawer;
-
-public abstract class Matrix implements IMatrix, IPrintable {
+public abstract class Matrix implements IMatrix {
     private IVector[] matrix;
     private int row, column;
 
@@ -13,8 +11,6 @@ public abstract class Matrix implements IMatrix, IPrintable {
         for (int i = 0; i < row; i++)
             matrix[i] = createVector(column);
     }
-
-    public abstract void draw(IDrawer drawer);
 
     public abstract IVector createVector(int column);
 

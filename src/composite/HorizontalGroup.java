@@ -1,15 +1,13 @@
 package composite;
 
-import drawer.IDrawer;
 import matrix.IMatrix;
-import matrix.IPrintable;
-
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
-public class HorizontalGroup implements IMatrix, IPrintable {
+public class HorizontalGroup implements IMatrix {
 
-    private List<IMatrix> listOfMatrix = new ArrayList<>();
+    private List<IMatrix> listOfMatrix = new LinkedList<>();
+    private int iterator = 0;
 
     @Override
     public int getElem(int row, int column) {
@@ -63,20 +61,26 @@ public class HorizontalGroup implements IMatrix, IPrintable {
         return sumColumnNumber;
     }
 
-    @Override
-    public void draw(IDrawer drawer) {
-        StringBuilder table = new StringBuilder();
-        table.append(drawer.newTable());
-        for (int i = 0; i < getRowNumber(); i++) {
-            table.append(drawer.newLine());
-            for (int j = 0; j < getColumnNumber(); j++) {
-                table.append(drawer.newCell());
-                table.append(getElem(i, j));
-                table.append(drawer.endCell());
+    public int getOffsetForMatrix(IMatrix matrix) {
+        int offset = 0;
+        for(IMatrix m : listOfMatrix) {
+            if(m.equals(matrix)) {
+                return offset;
             }
-            table.append(drawer.endLine());
+            offset += m.getColumnNumber();
         }
-        table.append(drawer.endTable());
-        drawer.draw(table.toString());
+        return -1;
+    }
+
+    public IMatrix getNextMatrix() {
+        IMatrix m = listOfMatrix.get(iterator);
+        iterator++;
+        return m;
+    }
+
+    public boolean hasNextMatrix() {
+        if(iterator >= listOfMatrix.size())
+            return false;
+        return true;
     }
 }

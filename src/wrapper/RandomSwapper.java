@@ -1,12 +1,10 @@
 package wrapper;
 
-import drawer.IDrawer;
-import matrix.IMatrix;
-import matrix.IPrintable;
+import matrix.*;
 
 import java.util.*;
 
-public class RandomSwapper implements IMatrix, IPrintable {
+public class RandomSwapper implements IMatrix {
     private IMatrix m;
     private Map<Integer, Integer> rowsChangeLog = new HashMap<>();
     private Map<Integer, Integer> columnsChangeLog = new HashMap<>();
@@ -64,22 +62,5 @@ public class RandomSwapper implements IMatrix, IPrintable {
     @Override
     public int getColumnNumber() {
         return m.getColumnNumber();
-    }
-
-    @Override
-    public void draw(IDrawer drawer) {
-        StringBuilder table = new StringBuilder();
-        table.append(drawer.newTable());
-        for (int i = 0; i < getRowNumber(); i++) {
-            table.append(drawer.newLine());
-            for (int j = 0; j < getColumnNumber(); j++) {
-                table.append(drawer.newCell());
-                table.append(getElem(i, j));
-                table.append(drawer.endCell());
-            }
-            table.append(drawer.endLine());
-        }
-        table.append(drawer.endTable());
-        drawer.draw(table.toString());
     }
 }

@@ -1,12 +1,34 @@
 package client;
 
-import composite.HorizontalGroup;
-import drawer.*;
+import factory.*;
 import matrix.*;
-import wrapper.*;
 
 public class ClientCode {
     public static void main(String[] args) {
+        int row = 2, column = 2;
+        DrawingDenseMatrix cdm = new DrawingDenseMatrix(row,column);
+        cdm.randomFilling(4,100);
+        cdm.printMatrixOnHtml();
+
+        row = 3; column = 3;
+        DrawingSparseMatrix dsm = new DrawingSparseMatrix(row,column);
+        dsm.randomFilling(5,100);
+        dsm.printMatrixOnHtml();
+
+        DrawingRandomSwapper cwm = new DrawingRandomSwapper(cdm);
+        cwm.random();
+        cwm.printMatrixOnHtml();
+        cwm.restore();
+        cwm.printMatrixOnHtml();
+
+        DrawingTransposedMatrix dtm = new DrawingTransposedMatrix(cwm);
+        dtm.printMatrixOnHtml();
+        /*
+        DrawingHorizontalGroup dhg = new DrawingHorizontalGroup();
+        dhg.addMatrix(cdm);
+        dhg.addMatrix(dsm);
+        dhg.printMatrixOnHtml();
+
         HorizontalGroup container1 = new HorizontalGroup();
         int row = 2, column = 2;
         Matrix dMatrix1 = new DenseMatrix(row, column);
@@ -54,7 +76,7 @@ public class ClientCode {
 
         TransposedMatrix tm = new TransposedMatrix(containerAll);
         tm.draw(new HTMLDrawer());
-        /*
+
         matrixInfo(dMatrix);
         System.out.println("-----------------------------------------------------------------");
         Matrix sMatrix = new SparseMatrix(row, column);

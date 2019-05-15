@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Random;
 
 public class InitMatrix {
-    public static void fillMatrix(Matrix m, int nonzeroValues, int maxValue) {
+    public static void fillMatrix(IMatrix m, int nonzeroValues, int maxValue) {
         if (nonzeroValues > m.getColumnNumber() * m.getRowNumber())
             throw new InputMismatchException("nonzero values > values in array");
         final Random random = new Random();

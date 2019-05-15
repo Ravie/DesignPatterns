@@ -1,10 +1,8 @@
 package wrapper;
 
-import drawer.IDrawer;
 import matrix.IMatrix;
-import matrix.IPrintable;
 
-public class TransposedMatrix implements IMatrix, IPrintable {
+public class TransposedMatrix implements IMatrix {
     private IMatrix m;
 
     public TransposedMatrix(IMatrix m) {
@@ -31,20 +29,4 @@ public class TransposedMatrix implements IMatrix, IPrintable {
         return m.getRowNumber();
     }
 
-    @Override
-    public void draw(IDrawer drawer) {
-        StringBuilder table = new StringBuilder();
-        table.append(drawer.newTable());
-        for (int i = 0; i < getRowNumber(); i++) {
-            table.append(drawer.newLine());
-            for (int j = 0; j < getColumnNumber(); j++) {
-                table.append(drawer.newCell());
-                table.append(getElem(i, j));
-                table.append(drawer.endCell());
-            }
-            table.append(drawer.endLine());
-        }
-        table.append(drawer.endTable());
-        drawer.draw(table.toString());
-    }
 }
