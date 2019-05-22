@@ -5,7 +5,8 @@ import visitor.Visitor;
 
 public interface IPrintable {
     void draw(IDrawer drawer);
-    void draw(IDrawer drawer, int offset);
+    String drawRow(IDrawer drawer, int row);
+    String drawEmptyRow(IDrawer drawer, int row);
     void accept(Visitor v);
     void setMatrix(IMatrix m);
 }

@@ -18,5 +18,13 @@ public class InitMatrix {
             }
         }
     }
+
+    public static void fillMatrixByConstant(IMatrix m, int constant) {
+        for (int i = 0; i < m.getRowNumber(); i++) {
+            for (int j = 0; j < m.getColumnNumber(); j++) {
+                m.setElem(i, j, constant);
+            }
+        }
+    }
 }
 

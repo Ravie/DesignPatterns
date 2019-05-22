@@ -1,14 +1,21 @@
 package factory;
 
+import composite.IGroupMatrix;
 import drawer.ConsoleDrawer;
 import drawer.HTMLDrawer;
-import matrix.IMatrix;
 import matrix.IPrintable;
+import visitor.ConcreteVisitor;
 import wrapper.TransposedMatrix;
 
-public class DrawingTransposedMatrix implements DrawingMatrix {
-    private TransposedMatrix m;
+public class DrawingTransposedMatrix implements DrawingGroupMatrix {
+    private IGroupMatrix m;
     private IPrintable printer;
+
+    public DrawingTransposedMatrix(DrawingGroupMatrix cm) {
+        this.m = new TransposedMatrix(cm.getMatrix());
+        this.printer = cm.getPrinter();
+        printer.setMatrix(m);
+    }
 
     public DrawingTransposedMatrix(DrawingMatrix cm) {
         this.m = new TransposedMatrix(cm.getMatrix());
@@ -17,7 +24,7 @@ public class DrawingTransposedMatrix implements DrawingMatrix {
     }
 
     @Override
-    public IMatrix getMatrix() {
+    public IGroupMatrix getMatrix() {
         return m;
     }
 
@@ -28,11 +35,11 @@ public class DrawingTransposedMatrix implements DrawingMatrix {
 
     @Override
     public void printMatrixOnHtml() {
-        printer.draw(new HTMLDrawer());
+        printer.accept(new ConcreteVisitor(new HTMLDrawer()));
     }
 
     @Override
     public void printMatrixOnConsole() {
-        printer.draw(new ConsoleDrawer());
+        printer.accept(new ConcreteVisitor(new ConsoleDrawer()));
     }
 }

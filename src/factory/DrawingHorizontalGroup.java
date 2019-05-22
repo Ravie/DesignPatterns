@@ -1,18 +1,20 @@
 package factory;
 
 import composite.HorizontalGroup;
+import composite.IGroupMatrix;
 import drawer.ConsoleDrawer;
 import drawer.HTMLDrawer;
-import matrix.IMatrix;
+import matrix.GroupPrintable;
 import matrix.IPrintable;
+import visitor.ConcreteVisitor;
 
 import java.util.LinkedList;
 import java.util.List;
 
-public class DrawingHorizontalGroup implements DrawingMatrix {
+public class DrawingHorizontalGroup implements DrawingGroupMatrix {
     private HorizontalGroup m;
     private List<IPrintable> printerList;
-    private IPrintable currentPrinter;
+    private GroupPrintable printer;
 
     public DrawingHorizontalGroup() {
         m = new HorizontalGroup();
@@ -20,41 +22,34 @@ public class DrawingHorizontalGroup implements DrawingMatrix {
     }
 
     @Override
-    public IMatrix getMatrix() {
+    public IGroupMatrix getMatrix() {
         return m;
     }
 
     @Override
-    public IPrintable getPrinter() {
-        return currentPrinter;
+    public GroupPrintable getPrinter() {
+        return printer;
     }
 
     @Override
     public void printMatrixOnHtml() {
-        int index = 0;
-        while(m.hasNextMatrix()) {
-            IMatrix current = m.getNextMatrix();
-            currentPrinter = printerList.get(index);
-            index++;
-            currentPrinter.setMatrix(current);
-            currentPrinter.draw(new HTMLDrawer(), m.getOffsetForMatrix(current));
-        }
+        printer.accept(new ConcreteVisitor(new HTMLDrawer()));
     }
 
     @Override
     public void printMatrixOnConsole() {
-        int index = 0;
-        while(m.hasNextMatrix()) {
-            IMatrix current = m.getNextMatrix();
-            currentPrinter = printerList.get(index);
-            index++;
-            currentPrinter.setMatrix(current);
-            currentPrinter.draw(new ConsoleDrawer(), m.getOffsetForMatrix(current));
-        }
+        printer.accept(new ConcreteVisitor(new ConsoleDrawer()));
+    }
+
+    public void addMatrix(DrawingGroupMatrix matrix) {
+        m.addMatrix(matrix.getMatrix());
+        printerList.add(matrix.getPrinter());
+        printer = new GroupPrintable(m, printerList);
     }
 
     public void addMatrix(DrawingMatrix matrix) {
         m.addMatrix(matrix.getMatrix());
         printerList.add(matrix.getPrinter());
+        printer = new GroupPrintable(m, printerList);
     }
 }

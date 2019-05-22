@@ -4,10 +4,9 @@ import matrix.IMatrix;
 import java.util.LinkedList;
 import java.util.List;
 
-public class HorizontalGroup implements IMatrix {
+public class HorizontalGroup implements IGroupMatrix {
 
     private List<IMatrix> listOfMatrix = new LinkedList<>();
-    private int iterator = 0;
 
     @Override
     public int getElem(int row, int column) {
@@ -38,10 +37,6 @@ public class HorizontalGroup implements IMatrix {
             throw new ArrayIndexOutOfBoundsException("Element has not been added");
     }
 
-    public void addMatrix(IMatrix matrix) {
-        listOfMatrix.add(matrix);
-    }
-
     @Override
     public int getRowNumber() {
         int maxRowNumber = Integer.MIN_VALUE;
@@ -61,26 +56,44 @@ public class HorizontalGroup implements IMatrix {
         return sumColumnNumber;
     }
 
-    public int getOffsetForMatrix(IMatrix matrix) {
-        int offset = 0;
-        for(IMatrix m : listOfMatrix) {
-            if(m.equals(matrix)) {
-                return offset;
-            }
-            offset += m.getColumnNumber();
+    @Override
+    public void addMatrix(IMatrix matrix) {
+        listOfMatrix.add(matrix);
+    }
+
+    @Override
+    public void addMatrix(IGroupMatrix matrix) {
+        listOfMatrix.add(matrix);
+    }
+
+    @Override
+    public MatrixIterator iterator(int index) {
+        return new ListItr(index);
+    }
+
+    private class ListItr implements MatrixIterator {
+        private int iterator = 0;
+
+        ListItr(int index) {
+            if(index < listOfMatrix.size())
+                iterator = index;
         }
-        return -1;
-    }
 
-    public IMatrix getNextMatrix() {
-        IMatrix m = listOfMatrix.get(iterator);
-        iterator++;
-        return m;
-    }
+        @Override
+        public IMatrix getNextMatrix() {
+            IMatrix m = listOfMatrix.get(iterator);
+            iterator++;
+            return m;
+        }
 
-    public boolean hasNextMatrix() {
-        if(iterator >= listOfMatrix.size())
-            return false;
-        return true;
+        @Override
+        public void reset() {
+            iterator = 0;
+        }
+
+        @Override
+        public boolean hasNextMatrix() {
+            return iterator < listOfMatrix.size();
+        }
     }
 }

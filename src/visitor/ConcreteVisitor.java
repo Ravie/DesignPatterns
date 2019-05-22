@@ -24,4 +24,9 @@ public class ConcreteVisitor implements Visitor {
     public void visitSparsePrintable(SparsePrintable sm) {
         sm.draw(drawer);
     }
+
+    @Override
+    public void visitGroupPrintable(GroupPrintable gm) {
+        gm.draw(drawer);
+    }
 }

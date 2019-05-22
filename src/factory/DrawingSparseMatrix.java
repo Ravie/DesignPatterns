@@ -2,6 +2,7 @@ package factory;
 
 import drawer.*;
 import matrix.*;
+import visitor.ConcreteVisitor;
 
 public class DrawingSparseMatrix implements DrawingMatrix {
     private IMatrix m;
@@ -24,12 +25,12 @@ public class DrawingSparseMatrix implements DrawingMatrix {
 
     @Override
     public void printMatrixOnHtml() {
-        printer.draw(new HTMLDrawer());
+        printer.accept(new ConcreteVisitor(new HTMLDrawer()));
     }
 
     @Override
     public void printMatrixOnConsole() {
-        printer.draw(new ConsoleDrawer());
+        printer.accept(new ConcreteVisitor(new ConsoleDrawer()));
     }
 
     public void randomFilling(int nonZeroValues, int maxValue) {

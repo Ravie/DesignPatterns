@@ -4,6 +4,7 @@ import drawer.ConsoleDrawer;
 import drawer.HTMLDrawer;
 import matrix.IMatrix;
 import matrix.IPrintable;
+import visitor.ConcreteVisitor;
 import wrapper.RandomSwapper;
 
 public class DrawingRandomSwapper implements DrawingMatrix {
@@ -28,12 +29,12 @@ public class DrawingRandomSwapper implements DrawingMatrix {
 
     @Override
     public void printMatrixOnHtml() {
-        printer.draw(new HTMLDrawer());
+        printer.accept(new ConcreteVisitor(new HTMLDrawer()));
     }
 
     @Override
     public void printMatrixOnConsole() {
-        printer.draw(new ConsoleDrawer());
+        printer.accept(new ConcreteVisitor(new ConsoleDrawer()));
     }
 
     public void random() {
